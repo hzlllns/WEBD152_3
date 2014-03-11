@@ -1,0 +1,281 @@
+/* 
+
+YELLOW: #fbdb00
+LIGHT GREY: #f4f4f4
+RED: #e13e2c
+TEAL: #31aa84
+DARK PURPLE: #363659
+
+*/
+
+/* ---- GLOBAL ---- */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul { 
+	margin: 0; 
+	padding: 0;
+}
+
+body {
+	color: #363659;
+	padding: 0;
+	margin:0;
+	font: 14px/25px "Andale Mono", AndaleMono, monospace;
+}
+
+/* ---- TYPE ---- */
+
+h1 { 
+	font: 34px/50px "Roboto Condensed", Arial Narrow, Arial, Helvetica, sans-serif;
+	color: #363659;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 0;
+	padding: 100px 0 80px 0;
+}
+
+	h1 span { color: #e13e2c; }
+
+h2 {
+	font: 30px/50px "Roboto Condensed", Arial Narrow, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	color: #e13e2c;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+
+/* ---- SIDE ---- */
+
+aside {
+	background: url(../img/sidebar_bg.jpg) #211c32;
+	width: 40%;
+	height: 100%;
+	position: fixed;
+	overflow: hidden;
+}
+
+	aside #social {
+		margin: 20px 30px;
+	}
+
+	#social a { 
+		color: #fff; 
+		font-size: 20px; 
+		margin-right: 8px;
+	}
+
+	#social a:hover { 
+		color: #fbdb00; 
+	}	
+
+/* ---- STRUCTURE ---- */
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#content { 
+	position: absolute;
+	left: 40%;
+	width: 60%;
+}
+
+header, #exp, #who, #edu, #skills, #contact { 
+	float: left;
+	width: 100%;
+}
+
+header { 
+	background-color: #f4f4f4;
+}
+
+/* ---- EXPERIENCE ---- */
+
+.table { display: table; margin-bottom: 30px; }
+.cell { display: table-cell; }
+.row { display: table-row; }
+
+.duration {
+	text-align: right;
+	color: #8b8b8b;
+	font-family: "Roboto Condensed", Arial Narrow, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.company {
+	padding-left: 30px; 
+}
+
+	.company p { 
+		margin: 0; 
+		padding: 0; 
+		line-height: 25px;
+	}
+
+	.company p:first-child {
+			font-family: "Roboto Condensed", Arial Narrow, Arial, Helvetica, sans-serif;
+			font-weight: 700;
+			letter-spacing: 1px;
+			text-transform: uppercase;			
+		}
+
+	.company p:last-child {
+			margin-bottom: 20px;		
+		}
+
+/* ---- WHO SHE'S WORKED WITH ---- */
+
+#who {
+	color: #fff;
+	background-color: #e13e2c;
+}
+
+	#who h2 {
+		color: #fff;
+	}
+
+	#who ul { 
+		margin: 0 0 40px 20px;
+		padding: 0;
+		float: left; 
+		width: 40%;
+	}
+
+/* ---- SKILLS ---- */
+
+#skills {
+	color: #fff;
+	background-color: #211c32;
+	padding-bottom: 30px;
+}
+
+	#skills h2 {
+		color: #fff;
+	}
+
+	#skills ul {
+		list-style-type: none;
+		margin: 0 0 30px 0;
+		padding:0;
+		width: 100%;
+	}
+
+		#skills ul li {
+			float: left;
+			margin: 0 15px 15px 0;
+			background-color: #323250;
+			color: #fbdb00;
+			padding: 5px 8px;
+			border-radius: 5px;
+		}
+
+/* ---- EDUCATION ---- */	
+
+ul.school {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 40px;
+}	
+
+ul.school li:first-child {
+	font-family: "Roboto Condensed", Arial Narrow, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;	
+}
+
+/* ---- CONTACT ---- */
+
+#contact { 
+	color: #fff;
+	background-color: #31aa84;
+	text-align: center;
+	padding: 120px 0;
+}
+
+	#contact a {
+		font: 35px "Roboto Condensed", Arial Narrow, Arial, Helvetica, sans-serif;
+		color: #fff;
+		letter-spacing: 3px;
+		border: #fff 8px solid;
+		background-color: #31aa84;
+		text-transform: uppercase;
+		padding: 30px 70px;
+	}
+
+		#contact a:hover { 
+			color: #363659;
+			border: #363659 8px solid;
+		}
+
+
+
+/* ---- MOBILE ---- */
+
+@media only screen and (max-width: 670px) and (min-width: 320px) {
+
+	body { font-size: 12px; }
+
+	aside {
+		width: 100%;
+		height: 250px;
+		position: relative;
+		background-size: 110%;
+	}
+
+	aside #social {
+		margin: 20px auto 0 auto;
+		width: 150px
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	#content { 
+		display: block;
+		position: relative;
+		width: 100%;
+		left:0;
+	}
+
+	h1 { 
+		float: left; 
+		margin: 20px 10px;
+		padding: 0;
+		font-size: 21px;
+		line-height: 30px;	
+	}
+
+	h2 { 
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	#contact { padding: 70px 0; }
+
+	#contact a {
+		font-size: 20px;
+		padding: 20px 30px;
+	}	
+
+}
+
+
