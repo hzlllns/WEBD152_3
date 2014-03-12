@@ -59,6 +59,7 @@ h2 {
 
 aside {
 	background: url(../img/sidebar_bg.jpg) #211c32;
+	background-size: cover;
 	width: 40%;
 	height: 100%;
 	position: fixed;
